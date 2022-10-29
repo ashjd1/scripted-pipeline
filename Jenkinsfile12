@@ -7,5 +7,6 @@ stage('Change Mode') {
 }
     stage('Executing') {
     'sh ./a.out'
+    'sh echo text'
  }
 }
