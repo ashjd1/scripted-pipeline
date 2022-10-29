@@ -7,7 +7,7 @@ stage('Change Mode') {
     stage('Compiling') {
     
      sh '''gcc print.cpp
-     echo Ashutosh
+     echo Ashutosh JD
      '''
 }
     stage('Executing') {
