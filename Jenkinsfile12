@@ -1,6 +1,6 @@
 node {  
 stage('Change Mode') { 
-    sh '''chmode a+x print.cpp
+    sh '''chmod a+x print.cpp
 	echo This is change mode
     '''
 }
