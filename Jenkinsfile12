@@ -1,11 +1,11 @@
 node {  
 stage('Build') { 
-//code
+    'sh chmode a+x print.txt'
 }
     stage('Test') {
- // code
+     'sh gcc print.txt'
 }
     stage('Deploy') {
- // code
+    'sh ./a.out'
  }
 }
