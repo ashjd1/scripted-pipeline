@@ -1,14 +1,17 @@
 node {  
 stage('Change Mode') { 
-    '''sh chmode a+x print.cpp
+    sh '''chmode a+x print.cpp
 	echo This is change mode
     '''
 }
     stage('Compiling') {
-     'sh gcc print.cpp'
+    
+     sh '''gcc print.cpp
+     echo ashutosh
+     '''
 }
     stage('Executing') {
-    'sh ./a.out'
-    'sh echo text'
+    sh './a.out'
+    sh 'echo text'
  }
 }
