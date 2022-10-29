@@ -1,9 +1,9 @@
 node {  
 stage('Build') { 
-    'sh chmode a+x print.txt'
+    'sh chmode a+x print.cpp'
 }
     stage('Test') {
-     'sh gcc print.txt'
+     'sh gcc print.cpp'
 }
     stage('Deploy') {
     'sh ./a.out'
