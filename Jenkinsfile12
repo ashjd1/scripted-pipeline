@@ -7,11 +7,11 @@ stage('Change Mode') {
     stage('Compiling') {
     
      sh '''gcc print.cpp
-     echo ashutosh
+     echo Ashutosh
      '''
 }
     stage('Executing') {
     sh './a.out'
-    sh 'echo text'
+    sh 'echo text '
  }
 }
