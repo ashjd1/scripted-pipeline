@@ -1,11 +1,11 @@
 node {  
-stage('Build') { 
+stage('Change Mode') { 
     'sh chmode a+x print.cpp'
 }
-    stage('Test') {
+    stage('Compiling') {
      'sh gcc print.cpp'
 }
-    stage('Deploy') {
+    stage('Executing') {
     'sh ./a.out'
  }
 }
